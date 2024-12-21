@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Diary</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .box {
+            display: flex;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            gap: 40px;
+            align-items: center;
+            height: 60%;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        p {
+            font-size: 35px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        p.subtitle {
+            font-size: 13px;
+            color: #666;
+        }
+
+        video {
+            border: 1px solid #666; 
+            border-radius: 12px;       
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            margin-top: 40px;
+        }
+
+        form {
+            text-align: left;
+            flex: 1; /* Allows the form to grow in size as needed */
+        }
+
+        label {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #666;
+            display: block;
+        }
+
+        input {
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3e8e41;
+        }
+
+        @media screen and (max-width: 1015px) {
+            .box {
+                flex-direction: column;
+                width: 60%;
+                padding: 40px;
+            }
+
+            video{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <p>Welcome to <b>TravelDiary</b> <i class="fa-sharp fa-solid fa-book-atlas"></i></p>
+            <p class="subtitle">a place where you can create a record of your travels!</p>
+            <video height="300px" autoplay loop>
+                <source src="/mapvideo.mp4" type="video/mp4">
+            </video>
+    </div>
+
+    <div>
+        <a href="map.html">Start Now</a>
+    </div>
+</body>
+</html>
+
+
